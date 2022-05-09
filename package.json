@@ -8,6 +8,16 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prettier": {
+    "tabWidth": 2,
+    "printWidth": 150,
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "trailingComma": "es5",
+    "arrowParens": "always",
+    "jsxBracketSameLine": false
+  },
   "dependencies": {
     "next": "12.1.6",
     "react": "18.1.0",
@@ -17,8 +27,11 @@
     "@types/node": "17.0.31",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.3",
+    "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "8.15.0",
     "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.2",
     "typescript": "4.6.4"
   }
 }
