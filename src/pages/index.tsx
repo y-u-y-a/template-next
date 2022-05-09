@@ -1,8 +1,10 @@
+import Layout from '../components/layouts/default'
+
 const Home = () => {
   return (
-    <>
-      <h1>トップページ</h1>
-    </>
+    <Layout title="Home">
+      <h1 className="text-accent">Home</h1>
+    </Layout>
   )
 }
 

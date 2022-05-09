@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Futura;
+  src: url(https://use.typekit.net/bzs5tqz.css);
+}
