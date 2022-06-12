@@ -1,15 +1,15 @@
-import Head from 'next/head'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 
-const layoutDefault = ({ children, title = 'Next Template APP' }: { children: any; title: string }) => {
+interface Props {
+  children: JSX.Element
+}
+
+const layoutDefault = ({ children }: Props) => {
   return (
     <>
-      <Head>
-        <title>{title}</title>
-      </Head>
       <Header />
-      <main>{children}</main>
+      {children}
       <Footer />
     </>
   )
