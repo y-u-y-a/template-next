@@ -1,4 +1,4 @@
-// const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./src/**/*.tsx'], // allow
@@ -11,6 +11,8 @@ module.exports = {
       // futura: ['futura-pt', 'sans-serif'],
       // },
       colors: {
+        // NOTE: https://tailwindcss.jp/docs/customizing-colors#default-color-palette
+        ...defaultTheme.colors,
         body: '#DCDDD8',
         accent: '#D74B4B',
         link: '#3366FF',

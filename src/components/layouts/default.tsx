@@ -8,9 +8,13 @@ interface Props {
 const layoutDefault = ({ children }: Props) => {
   return (
     <>
-      <Header />
-      {children}
-      <Footer />
+      <div className="footerFixedContainer">
+        <Header />
+        <main>{children}</main>
+        <div className="footerFixed">
+          <Footer />
+        </div>
+      </div>
     </>
   )
 }

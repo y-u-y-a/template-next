@@ -6,7 +6,14 @@
   src: url(https://use.typekit.net/bzs5tqz.css);
 }
 
-
 a {
   @apply text-link;
+}
+
+.footerFixedContainer {
+  @apply relative min-h-screen box-border;
+}
+
+.footerFixed {
+  @apply absolute bottom-0 w-full;
 }
