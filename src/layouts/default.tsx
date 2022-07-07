@@ -1,11 +1,11 @@
-import { Header } from '../Header'
-import { Footer } from '../Footer'
+import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 
 interface Props {
-  children: JSX.Element
+  children: JSX.Element | JSX.Element[]
 }
 
-const layoutDefault = ({ children }: Props) => {
+export const DefaultLayout = ({ children }: Props) => {
   return (
     <>
       <div className="footerFixedContainer bg-gray-100">
@@ -18,5 +18,3 @@ const layoutDefault = ({ children }: Props) => {
     </>
   )
 }
-
-export default layoutDefault

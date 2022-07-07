@@ -1,10 +1,10 @@
-import Layout from '../components/layouts/default'
+import { DefaultLayout } from '../layouts/default'
 
 const Home = () => {
   return (
-    <Layout>
+    <DefaultLayout>
       <h1 className="text-accent">Home</h1>
-    </Layout>
+    </DefaultLayout>
   )
 }
 
